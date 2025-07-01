@@ -1,0 +1,10 @@
+<div class="container content">
+	<a href="{{ site.baseurl }}{% link index.html%}">Home</a>|
+	<a href="{{ site.baseurl }}{% link about.md %}">About</a>|
+	<a href="{{ site.baseurl }}/sitemap.xml">Sitemap</a>
+	{%- if site.service-links.rss -%}|<a href="{{ site.baseurl }}/feed.xml">RSS</a>{%- endif -%}
+	{%- if site.service-links.email -%}|<a href="mailto:{{ site.service-links.email }}">Email</a>{%- endif -%}
+	{%- if site.service-links.git -%}|<a href="{{ site.service-links.git }}">Git</a>{%- endif -%}
+	{%- if site.service-links.mastodon -%}|<a rel="me" href="{{ site.service-links.mastodon }}">Mastodon</a>{%- endif -%}
+	{%- if site.service-links.peertube -%}|<a rel="me" href="{{ site.service-links.peertube }}">Peertube</a>{%- endif -%}
+</div>
